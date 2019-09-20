@@ -1,0 +1,8 @@
+ja: 
+    attributes:
+        post:
+            id: ID
+            title: タイトル
+            content: 詳しい説明
+            created_at: 投稿日時
+            updated_at: 更新日時
