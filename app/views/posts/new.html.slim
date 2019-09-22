@@ -7,8 +7,8 @@ h1　新規投稿
 = form_with model: @post, local: true do |f|
     .form-group
         = f.label :title
-        = f.text.field :title, class: 'form_control', id: 'post_title'
+        = f.text_field :title, class: 'form-control', id: 'post_title'
     .form-group
-        = f.label :content
-        = f.text_area :content, rows: 5, class: 'form_control', id: 'post_content'
-    = f.submit nill, class: 'btn btn-pramary'
+        = f.label :cont
+        = f.text_area :content, rows: 5, class: 'form-control', id: 'post_content'
+    = f.submit nil, class: 'btn btn-primary'

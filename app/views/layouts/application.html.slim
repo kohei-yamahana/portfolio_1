@@ -10,4 +10,6 @@ html
   .app-title.navibar.navibar-expand-md.navbar-light.bg-light
     .navbar-brand Look for Hobby
   .container
+    - if flash.notice.present?
+      .alert.alert-success= flash.notice
     = yield

@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do |i|
+    Post.create!(title: "post#{1 + i}", content: "私は#{1 + i}です。" )
+end

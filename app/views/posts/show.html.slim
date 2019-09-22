@@ -1,2 +1,9 @@
-h1 Posts#show
-p Find me in app/views/posts/show.html.slim
+h1 = @post.title
+.nav.justify-content-end
+    = link_to '投稿一覧', posts_path, class: 'nav-link'
+    = link_to '編集', edit_post_path, class: 'nav-link'
+    
+
+div
+    p = @post.content
+
